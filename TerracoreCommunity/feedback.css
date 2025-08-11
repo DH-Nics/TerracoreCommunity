@@ -1,0 +1,100 @@
+body {
+    background: #0e0e0e;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    user-select: none;      /* Prevent selecting text */
+    -webkit-user-select: none; /* Safari/Chrome */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;  /* IE/Edge */
+    -webkit-user-drag: none; /* Chrome/Safari */
+    -khtml-user-drag: none;  /* Old Safari */
+    -moz-user-drag: none;    /* Firefox (partial) */
+    -o-user-drag: none;      /* Opera */
+    cursor: default;        /* Keep default arrow cursor */
+}
+
+img {
+    pointer-events: none; /* Prevents clicking, dragging, right-clicking */
+    user-select: none; /* Prevents selecting image text/alt */
+}
+
+.feedback-container {
+    width: 450px;
+    max-width: 450px;
+    padding: 30px 25px;
+    background: #1e1e1e;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.06);
+    box-sizing: border-box;
+}
+
+.feedback-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #ffee00, #ffa200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.feedback-container input,
+.feedback-container textarea {
+    width: 94%;
+    padding: 12px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #2c2c2c;
+    color: white;
+    font-size: 14px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.feedback-container input::placeholder,
+.feedback-container textarea::placeholder {
+    color: #aaa;
+}
+
+.feedback-container input:focus,
+.feedback-container textarea:focus {
+    background: #383838;
+    outline: none;
+    box-shadow: 0 0 6px #ffcc00;
+}
+
+.feedback-container textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.feedback-container button {
+    width: 100%;
+    padding: 12px;
+    background: #ffcc00;
+    color: #0e0e0e;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.feedback-container button:hover {
+    background: #e6b800;
+}
+
+@media screen and (max-width: 500px) {
+    .feedback-container {
+        padding: 25px 15px;
+    }
+}

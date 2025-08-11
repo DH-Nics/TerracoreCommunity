@@ -1,0 +1,83 @@
+/* Reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #333;
+  padding: 40px;
+  overflow-x: hidden;
+  user-select: none;      /* Prevent selecting text */
+  -webkit-user-select: none; /* Safari/Chrome */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none;  /* IE/Edge */
+  -webkit-user-drag: none; /* Chrome/Safari */
+  -khtml-user-drag: none;  /* Old Safari */
+  -moz-user-drag: none;    /* Firefox (partial) */
+  -o-user-drag: none;      /* Opera */
+  cursor: default;        /* Keep default arrow cursor */
+}
+
+img {
+    pointer-events: none; /* Prevents clicking, dragging, right-clicking */
+    user-select: none; /* Prevents selecting image text/alt */
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0080ff;
+}
+
+/* Comment-style feedback entries */
+.feedback-entry {
+  background-color: #080808;
+  border-left: 4px solid #3498db;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.738);
+}
+
+.feedback-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.feedback-id {
+  font-weight: bold;
+  color: #3498db;
+  font-size: 16px;
+}
+
+.feedback-name {
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.feedback-time {
+  font-style: italic;
+  color: #999;
+  font-size: 13px;
+  align-self: flex-end;
+}
